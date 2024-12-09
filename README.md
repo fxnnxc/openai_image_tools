@@ -9,6 +9,15 @@ pip install openai
 
 All the results are saved in the `generated_images`, `variation_images`, and `edited_images` folders.
 
+## Happy Hacking!
+
+We support Jupyter Notebook. You can find the examples in the `*.ipynb` files.
+* 🚀 Generate images: [generate.ipynb](generate.ipynb)
+* 🌊 Create variations: [variation.ipynb](variation.ipynb)
+* 🖌️ Edit images: [edit.ipynb](edit.ipynb)
+
+
+
 ## Generate Images
 
 Run the following command to generate an image.You can choose the model, size, and prompt. 
