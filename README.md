@@ -1,13 +1,21 @@
 # OpenAI Image Tools
 
-1. Get OpenAI API key from [here](https://platform.openai.com/api-keys)
-2. Install dependencies
+1. 🚀 Get OpenAI API key from [here](https://platform.openai.com/api-keys)
+2. 🏄‍♂️ Install dependencies
 
 ```bash
 pip install openai
 ```
 
+All the results are saved in the `generated_images`, `variation_images`, and `edited_images` folders.
+
 ## Generate Images
+
+Run the following command to generate an image.You can choose the model, size, and prompt. 
+The number of images to generate is *n*.
+
+* models: `dall-e-2`, `dall-e-3`
+
 
 ```bash 
 export OPENAI_API_KEY=YOUR_API_KEY
@@ -18,6 +26,8 @@ python generate.py  --n 1 --model dall-e-2 --size 1024x1024 --prompt "An impress
 
 ## Create Variations
 
+The variation does not support a prompt as input. It only takes an existing image as input.
+
 ```bash 
 export OPENAI_API_KEY=YOUR_API_KEY
 python variation.py --n 1 --model dall-e-2 --image-path generated_images/example.png --size 1024x1024
@@ -26,6 +36,11 @@ python variation.py --n 1 --model dall-e-2 --image-path generated_images/example
 <img src="variation_images/example.png" alt="Variation 0" width="256">
 
 ## Edit Images
+
+Mask image is a black and white image where 
+* the black areas are the areas that will **be edited**.
+* the white areas are the areas that will **remain unchanged**.
+
 
 ```bash 
 export OPENAI_API_KEY=YOUR_API_KEY
