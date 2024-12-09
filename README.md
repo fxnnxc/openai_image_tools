@@ -1,5 +1,11 @@
 # OpenAI Image Tools
 
+1. Get OpenAI API key from [here](https://platform.openai.com/api-keys)
+2. Install dependencies
+
+```bash
+pip install openai
+```
 
 ## Generate Images
 
